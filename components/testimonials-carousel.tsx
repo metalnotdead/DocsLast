@@ -5,14 +5,9 @@ import Image, { StaticImageData } from 'next/image'
 import { Transition } from '@headlessui/react'
 
 import WorldImage from '@/public/images/worldmap.png'
-import UserImage01 from '@/public/images/world-user-01.jpg'
-import UserImage02 from '@/public/images/world-user-02.jpg'
-import UserImage03 from '@/public/images/world-user-03.jpg'
-import UserImage04 from '@/public/images/world-user-04.jpg'
-import UserImage05 from '@/public/images/world-user-05.jpg'
-import UserImage06 from '@/public/images/world-user-06.jpg'
-import UserImage07 from '@/public/images/world-user-07.jpg'
-import UserImage08 from '@/public/images/world-user-08.jpg'
+import UserImage01 from '@/public/images/testimonial-01.jpg'
+import UserImage07 from '@/public/images/testimonial-03.jpg'
+import UserImage08 from '@/public/images/testimonial-02.jpg'
 
 export default function TestimonialsCarousel() {
 
@@ -31,23 +26,23 @@ export default function TestimonialsCarousel() {
   const items: Item[] = [
     {
       img: UserImage01,
-      alt: 'Testimonial 01',
-      quote: '“ I feel grateful that Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in education as well.“',
-      name: 'Darya Semenova',
-      role: 'Backend Developer'
+      alt: 'founder',
+      quote: '“If you are an enthusiastic and intelligent professional, we are excited to review your application and potentially have you join our vibrant team. Apply now and lets shape the future together!“',
+      name: 'Yasin Tezcan',
+      role: 'Frontend Developer'
     },
     {
-      img: UserImage02,
-      alt: 'Testimonial 02',
-      quote: '“ Not only in my career but in education as well, I feel grateful that Open PRO pushed me to expand my horizons and strive to accomplish more.“',
-      name: 'Greg Sebastian',
-      role: 'Head of Design'
+      img: UserImage07,
+      alt: 'cofounder',
+      quote: '“Ready to be part of an energetic and intelligent team that thrives on innovation? Send in your application and lets embark on this exciting journey together!“',
+      name: 'M.M Tezcan',
+      role: 'Frontend Lead'
     },
     {
-      img: UserImage03,
-      alt: 'Testimonial 03',
-      quote: '“ I feel grateful that Open PRO pushed me to expand my horizons and strive to accomplish more, not only in my career but in education as well.“',
-      name: 'Dominik Prasad',
+      img: UserImage08,
+      alt: 'cofounder',
+      quote: '“Join our team of dynamic and brilliant individuals who share a passion for innovation. Your application is eagerly awaited!“',
+      name: 'Yusuf Tezcan',
       role: 'Backend Lead'
     }
   ]
@@ -77,7 +72,7 @@ export default function TestimonialsCarousel() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16" data-aos-id-testimonialcar>
-            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-testimonialcar]">Join the Open PRO team</h2>
+            <h2 className="h2 mb-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-testimonialcar]">Join the BlackGem AI team</h2>
             <p className="text-xl text-gray-400" data-aos="fade-up" data-aos-delay="200" data-aos-anchor="[data-aos-id-testimonialcar]">Vitae aliquet nec ullamcorper sit amet risus nullam eget felis semper quis lectus nulla at volutpat diam ut venenatis tellus in ornare.</p>
           </div>
 
@@ -135,12 +130,8 @@ export default function TestimonialsCarousel() {
                 {/* People pics */}
                 <Image src={WorldImage} width={672} height={330} alt="World map" />
                 <Image className="absolute rounded-full" style={{ top: '22%', left: '52%' }} src={UserImage01} width={32} height={32} alt="User 01" data-aos="fade-up" />
-                <Image className="absolute rounded-full" style={{ top: '50%', left: '58%' }} src={UserImage02} width={48} height={48} alt="User 02" data-aos="fade-up" data-aos-delay="400" />
-                <Image className="absolute rounded-full" style={{ top: '8.5%', left: '70.5%' }} src={UserImage03} width={56} height={56} alt="User 02" data-aos="fade-up" data-aos-delay="100" />
-                <Image className="absolute rounded-full" style={{ top: '34%', left: '76.5%' }} src={UserImage04} width={72} height={72} alt="User 04" data-aos="fade-up" data-aos-delay="700" />
-                <Image className="absolute rounded-full" style={{ top: '29.5%', left: '8.5%' }} src={UserImage05} width={48} height={48} alt="User 05" data-aos="fade-up" data-aos-delay="500" />
-                <Image className="absolute rounded-full" style={{ top: '56%', left: '19%' }} src={UserImage06} width={56} height={56} alt="User 06" data-aos="fade-up" data-aos-delay="200" />
-                <Image className="absolute rounded-full" style={{ top: '20%', left: '24.5%' }} src={UserImage07} width={64} height={64} alt="User 07" data-aos="fade-up" data-aos-delay="600" />
+               
+                <Image className="absolute rounded-full" style={{ top: '20%', left: '24.5%' }} src={UserImage07} width={64} height={64} alt="User 07" data-aos="fade-up" data-aos-delay="200" />
                 <Image className="absolute rounded-full" style={{ top: '39%', left: '43%' }} src={UserImage08} width={40} height={40} alt="User 08" data-aos="fade-up" data-aos-delay="300" />
               </div>
             </div>

@@ -13,12 +13,12 @@ export default function HelpSidebar() {
       href: '/help/frequently-asked-questions'
     },
     {
-      name: 'What is Open PRO',
-      href: '/help/what-is-open-pro'
+      name: 'What is BlackGem AI',
+      href: '/help/what-is-blackgem'
     },
     {
-      name: 'Open PRO plan’s features',
-      href: '/help/open-pro-plans-features'
+      name: 'BlackGem AI plan’s features',
+      href: '/help/blackgem-plans-features'
     },
     {
       name: 'Get started',
